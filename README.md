@@ -68,4 +68,4 @@
   The project is open for all. Feel free to make any changes in it.
   The GUI is still under development and will be added soon.
   Till then, all suggestions are warmly accepted.
-  Contact me at [here](#)
+  Contact me at [here](#) 
