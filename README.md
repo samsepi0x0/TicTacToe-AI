@@ -54,14 +54,13 @@
   As easy as that!
   
 ## Output:
-  When Played:
-  ----------
+  ###### When Played:
   
   ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output1.png)
   
   
-  Expected Result:
-  --------------
+  ###### Expected Result:
+
   
   ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output2.png)
 
