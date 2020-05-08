@@ -55,9 +55,9 @@
   
 ## Output:
   When Played:
-  ![image](https://github.com/samsepi0x0/TicTacToe-AI/output1.png)
+  ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output1.png)
   Expected Result:
-  ![image](https://github.com/samsepi0x0/TicTacToe-AI/output2.png)
+  ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output2.png)
 
 ## Updates:
   The project is open for all. Feel free to make any changes in it.
