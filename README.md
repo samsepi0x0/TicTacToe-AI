@@ -53,6 +53,12 @@
   To make a move, enter the number repersenting the cell address you want to fill.
   As easy as that!
   
+## Output:
+  When Played:
+  ![image](https://github.com/samsepi0x0/TicTacToe-AI/output1.png)
+  Expected Result:
+  ![image](https://github.com/samsepi0x0/TicTacToe-AI/output2.png)
+
 ## Updates:
   The project is open for all. Feel free to make any changes in it.
   The GUI is still under development and will be added soon.
