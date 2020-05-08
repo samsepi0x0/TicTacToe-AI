@@ -55,8 +55,12 @@
   
 ## Output:
   When Played:
+  ----------
+  
   ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output1.png)
   Expected Result:
+  --------------
+  
   ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output2.png)
 
 ## Updates:
