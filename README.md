@@ -31,6 +31,15 @@
   $ python3 board.py
   ```
 ## How to Play:
+  ```bash
+        _____ _         _____             _____          
+       |_   _(_) ___   |_   _|_ _  ___   |_   _|__   ___ 
+         | | | |/ __|____| |/ _` |/ __|____| |/ _ \ / _ \
+         | | | | (_|_____| | (_| | (_|_____| | (_) |  __/
+         |_| |_|\___|    |_|\__,_|\___|    |_|\___/ \___|
+  ```
+  In order to play the game, select a level for difficulty.
+  
   The expected output on running the Python file is:
   ```
             |     | 
@@ -54,12 +63,12 @@
   As easy as that!
   
 ## Output:
-  ###### When Played:
+  ###### When Played(Hard Level):
   
   ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output1.png)
   
   
-  ###### Expected Result:
+  ###### Expected Result(Hard Level):
 
   
   ![image](https://github.com/samsepi0x0/TicTacToe-AI/blob/master/output2.png)
