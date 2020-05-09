@@ -1,4 +1,5 @@
 import sys
+import random
 
 class Point():
     def __init__(self, x, y):
@@ -88,8 +89,42 @@ class Board():
         if turn == self.X:
             return maxim
         return minim
+    def rand_move(self, player):
+        cell = self.cells()
+        move = random.choice(cell)
+        self.game[move.x][move.y] = player
 
 class TicTacToe():
+    def easy_game(self):
+        tic = Board()
+        tic.printBoard()
+        while not tic.Over():
+            moveOk = True
+            while(True):
+                if not moveOk:
+                    print("Cell Not Empty.\n")
+                move = int(input("Your Move--> "))
+                x, y = self.coordinates(move)
+                if x==None or y==None:
+                    print("Invalid Cell Number.\n")
+                    continue
+                user = Point(x, y)
+                moveOk = tic.move(user, tic.O)
+                if moveOk:
+                    break
+            tic.printBoard()
+            if tic.Over():
+                break
+            tic.rand_move(tic.X)
+            tic.move(tic.moves, tic.X)
+            print("Computer-->")
+            tic.printBoard()
+        if tic.playerWon(tic.X):
+            print("Result--> Computer won the game.")
+        elif tic.playerWon(tic.O):
+            print("Result--> You won the game.")
+        else:
+            print("Result--> Draw.")
     def coordinates(self,x):
         if x==1:
             return 0, 0
@@ -111,7 +146,7 @@ class TicTacToe():
             return 2, 2
         else:
             return None, None
-    def game(self):
+    def hard_game(self):
         tic = Board()
         tic.printBoard()
         while not tic.Over():
@@ -133,6 +168,7 @@ class TicTacToe():
                 break
             tic.minimax(0, tic.X)
             tic.move(tic.moves, tic.X)
+            print("Computer-->")
             tic.printBoard()
         if tic.playerWon(tic.X):
             print("Result--> Computer won the game.")
@@ -140,6 +176,21 @@ class TicTacToe():
             print("Result--> You won the game.")
         else:
             print("Result--> Draw.")
+    def main(self):
+        print(" _____ _         _____             _____          ")
+        print("|_   _(_) ___   |_   _|_ _  ___   |_   _|__   ___ ")
+        print("  | | | |/ __|____| |/ _` |/ __|____| |/ _ \\ / _ \\")
+        print("  | | | | (_|_____| | (_| | (_|_____| | (_) |  __/")
+        print("  |_| |_|\\___|    |_|\\__,_|\\___|    |_|\\___/ \\___|\n\n")
+        print("Difficulty of the Game:\n(1)Easy\t\t(2)Hard")
+        diff = int(input("->"))
+        if diff == 1:
+            self.easy_game()
+        elif diff == 2:
+            self.hard_game()
+        else:
+            print("Not a good choice.")
+            sys.exit()
 
 Obj = TicTacToe()
-Obj.game()
+Obj.main()
