@@ -1,5 +1,5 @@
 # TicTacToe-AI!!
-  Python Code for AI-TicTacToe.
+  Python Code for AI-TicTacToe (minimax).
   
 ## Description:
   The above file contains the logic and the implementation of the algorithm
@@ -77,4 +77,4 @@
   The project is open for all. Feel free to make any changes in it.
   The GUI is still under development and will be added soon.
   Till then, all suggestions are warmly accepted.
-  Contact me at [here](#) 
+  Contact me at [here](#).
